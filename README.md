@@ -1,5 +1,8 @@
 # reproduction code of "thread by worker" issue
 A thread by worker never run.
+The line 157 in thread.worker.js below never return.
+
+    var result = Module['dynCall_ii'](e.data.start_routine, e.data.arg);
 
 ## Environment
 - macOS 10.14.6
@@ -14,3 +17,5 @@ A thread by worker never run.
 
 ### access
     emrun --no_browser .
+
+access http://localhost:6931/ using Google Chrome.
