@@ -1,0 +1,1 @@
+Module["mainScriptUrlOrBlob"] = "thread.js";
